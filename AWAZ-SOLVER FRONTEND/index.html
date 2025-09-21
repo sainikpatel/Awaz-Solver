@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awaz Solver - Voice to Code</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Awaz Solver</div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        
+        <section class="hero">
+            <h1 id="typewriter">Sites beyond imagination, one prompt away.</h1>
+            <p class="description">
+                Speak your ideas, and Awaz Solver transforms them into structured programs with speed and precision. 
+                No typing needed — just talk, and let Awaz write the code for you.
+            </p>
+            <div class="input-area">
+                <input type="text" id="voiceInput" placeholder="Your transcribed command will appear here..." readonly>
+                <button id="micBtn" title="Click to start/stop recording">
+                    <img src="microphone-342.svg" alt="Microphone Icon">
+                </button>
+            </div>
+            <p id="status-text">Click the mic to start speaking...</p>
+        </section>
+
+        <section class="result-area">
+            <h2>Generated Output</h2>
+            <div class="output-box" id="outputBox">
+                </div>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
